@@ -1,0 +1,273 @@
+/* #a33314 */
+
+
+body{
+  font-family: Hiragino, Helvetica, sans-serif;
+  font-weight: lighter;
+  font-size: 15px;
+  line-height: 1.5;
+  padding: 0;
+  margin: 0;
+}
+
+
+/* Global */
+.container{
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.headline{
+  color:#ffffff;
+  font-family: Hiragino,Helvetica,sans-serif;
+  font-weight: lighter;
+  font-size: 80px;
+  text-align: center;
+}
+.headline_text{
+  color:#ffffff;
+  font-family: Hiragino,Helvetica,sans-serif;
+  font-weight: lighter;
+  font-size: 20px;
+  text-align: center;
+}
+
+ul{
+  padding: 0;
+  margin: 0;
+}
+
+.button1{
+  height: 38px;
+  background: #e8491d;
+  border: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #ffffff;
+}
+
+.button1:hover{
+  background-color:#cc3e16;
+  cursor:pointer;
+}
+
+.dark{
+  padding: 15px;
+  background: rgb(35,46,61);
+  color: #ffffff;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+
+/* Header */
+header{
+  background: rgb(35,46,61);
+  color: #ffffff;
+  padding-top: 30px;
+  min-height: 70px;
+  border-bottom: #e8491d 3px solid;
+}
+
+header a{
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+header li{
+  float: left;
+  display: inline;
+  padding: 0 20px 0 20px;
+}
+
+header #branding{
+  float: left;
+}
+
+header #branding h1{
+  margin: 0;
+}
+
+header nav{
+  float: right;
+  margin-top: 10px;
+}
+
+header .highlight, header .current a{
+  color: #e8491d;
+}
+
+header a:hover{
+  color: #cccccc;
+}
+
+
+/* Showcase/Parallax */
+.parallax1{
+  min-height: 400px;
+  background: url("../ImgAssets/TestSonic2.jpg");
+  background-position: center;
+  background-attachment:fixed;
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.parallax2{
+  min-height: 200px;
+  background: url("../ImgAssets/TestSonic3.png");
+  background-position: center;
+  background-attachment:fixed;
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+
+#showcase h1{
+  margin-top: 100px;
+  font-size: 55px;
+  margin-bottom: 10px;
+}
+
+#showcase p{
+  font-size: 20px;
+}
+
+
+/* Newsletter */
+#newsletter{
+  padding: 15px;
+  color: #ffffff;
+  background: rgb(35,46,61);
+}
+
+.newsletterTop{
+  float:left;
+  padding-left: 50px;
+}
+
+#newsletter form{
+  float:right;
+  margin-top: 15px;
+}
+
+#newsletter input[type="email"]{
+  padding: 4px;
+  height: 25px;
+  width: 250px;
+}
+
+
+/* Boxes */
+#boxes{
+  margin-top: 20px;
+}
+
+#boxes .box{
+  float: left;
+  text-align: center;
+  width: 30%;
+  padding: 10px;
+}
+
+#boxes .box img{
+  width: 90px;
+}
+
+#boxes a{
+  color: rgb(35,46,61);
+  text-decoration: none;
+}
+
+
+/* Sidebar */
+aside#sidebar{
+  float: right;
+  width: 30%;
+  margin-top: 10px;
+}
+
+aside #sidebar .quote input, aside #sidebar .quote textarea{
+  width: 90%;
+  padding: 5px;
+
+
+}
+
+/* Main-col */
+article#main-col{
+  float: left;
+  width: 65%;
+}
+
+
+/* Friends */
+ul #friends li{
+  list-style: none;
+  padding: 20px;
+  border: #cccccc solid 1px;
+  margin-bottom: 5px;
+  background: #e6e6e6;
+}
+
+
+footer{
+  padding: 20px;
+  color: #ffffff;
+  background-color: #e8491d;
+  text-align: center;
+}
+
+
+
+
+
+
+/* Media Queries */
+@media(max-width: 768px){
+  header #branding,
+  header nav,
+  header nav li,
+  #newsletter h1,
+  #newsletter form,
+  #boxes .box,
+  article #main-col,
+  aside #sidebar{
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
+
+  header{
+    padding-bottom: 20px;
+  }
+
+  .newsletterTop{
+    text-align: center;
+  }
+
+  #newsletter button, .quote button{
+    display: block;
+    width: 100%;
+  }
+
+  #newsletter form input[type="email"], .quote input, .quote textarea{
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  #showcase{
+    min-height: 400px;
+    background: url("../ImgAssets/TestSonic2.jpg") no-repeat -950px -1550px;
+    text-align: center;
+    color: #ffffff;
+  }
+  .parallax1{
+      background-attachment: scroll;
+  }
+  .parallax2{
+      background-attachment: scroll;
+  }
+}
