@@ -1,0 +1,22 @@
+{
+  "name": "modme",
+  "version": "1.0.0",
+  "description": "This is the packages file to help build dependencies",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Schallenballa/ModMe.git"
+  },
+  "author": "Zachary Schallenberger",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Schallenballa/ModMe/issues"
+  },
+  "homepage": "https://github.com/Schallenballa/ModMe#readme",
+  "dependencies": {
+    "gotrue-js": "^0.9.22"
+  }
+}
