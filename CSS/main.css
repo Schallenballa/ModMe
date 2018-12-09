@@ -5,6 +5,7 @@ body{
   font-family: Hiragino, Helvetica, sans-serif;
   font-weight: lighter;
   font-size: 15px;
+  color: rgb(35,46,61);
   line-height: 1.5;
   padding: 0;
   margin: 0;
@@ -100,6 +101,7 @@ header .highlight, header .current a{
   color: #e8491d;
 }
 
+
 header a:hover{
   color: #cccccc;
 }
@@ -108,7 +110,7 @@ header a:hover{
 /* Showcase/Parallax */
 .parallax1{
   min-height: 400px;
-  background: url("../ImgAssets/TestSonic2.jpg");
+  background: url("../ImgAssets/TestSonic21.jpg");
   background-position: center;
   background-attachment:fixed;
   background-repeat: no-repeat;
@@ -117,13 +119,16 @@ header a:hover{
 
 .parallax2{
   min-height: 200px;
-  background: url("../ImgAssets/TestSonic3.png");
+  background: url("../ImgAssets/TestSonic31.jpg");
   background-position: center;
   background-attachment:fixed;
   background-repeat: no-repeat;
   background-size:cover;
 }
 
+.delay{
+  animation-delay: 2s;
+}
 
 #showcase h1{
   margin-top: 100px;
@@ -182,8 +187,9 @@ header a:hover{
 }
 
 
+
 /* Sidebar */
-aside#sidebar{
+aside #sidebar{
   float: right;
   width: 30%;
   margin-top: 10px;
@@ -264,6 +270,11 @@ footer{
     text-align: center;
     color: #ffffff;
   }
+
+  #register{
+    image
+  }
+
   .parallax1{
       background-attachment: scroll;
   }
