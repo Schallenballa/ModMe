@@ -19,6 +19,19 @@ body{
   overflow: hidden;
 }
 
+.registerButton{
+  border: none;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.registerButton:hover {
+    background-color: green;
+}
+
 .headline{
   color:#ffffff;
   font-family: Hiragino,Helvetica,sans-serif;
@@ -266,14 +279,12 @@ footer{
 
   #showcase{
     min-height: 400px;
-    background: url("../ImgAssets/TestSonic2.jpg") no-repeat -950px -1550px;
+    background: url("../ImgAssets/TestSonic21.jpg") no-repeat -950px -1550px;
     text-align: center;
     color: #ffffff;
   }
 
-  #register{
-    image
-  }
+
 
   .parallax1{
       background-attachment: scroll;
