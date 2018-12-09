@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Schallenballa/ModMe#readme",
   "dependencies": {
+    "dotenv": "^6.2.0",
     "gotrue-js": "^0.9.22"
   }
 }
