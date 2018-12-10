@@ -41,10 +41,9 @@
 <!--Checks to see if the user is logged in-->
   <script>
     const loggedIn = netlifyIdentity.currentUser();
+    const user = auth.currentUser();
       window.onload = function() {
-          <!-- Defaults to True -->
-
-          if(!loggedIn) {
+          if(!user) {
               document.getElementById('authenticated').style.display = 'block';
               document.getElementById('authenticated2').style.display = 'block';
           } else {
