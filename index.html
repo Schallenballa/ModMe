@@ -4,8 +4,9 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114725533-1"></script>
 
-    <!-- identity widget -->
+    <!-- identity widget-->
     <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    
 
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -13,6 +14,7 @@
       gtag('js', new Date());
       gtag('config', 'UA-114725533-1');
     </script>
+
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
       new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -31,6 +33,8 @@
     <title>ModMe | Home</title>
     <link rel="stylesheet" type="text/css" href="CSS/main.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <script src="index.js"></script>
   </head>
   <!-- Logo Link
   <a href="./">
@@ -40,8 +44,6 @@
 
 <!--Checks to see if the user is logged in-->
   <script>
-    const loggedIn = netlifyIdentity.currentUser();
-    const user = auth.currentUser();
       window.onload = function() {
           if(!user) {
               document.getElementById('authenticated').style.display = 'block';
@@ -51,6 +53,12 @@
               document.getElementById('authenticated2').style.display = 'none';
           }
       }
+  </script>
+
+  <script>
+    const loggedIn = netlifyIdentity.currentUser();
+    //const user = auth.currentUser();
+    console.log(netlifyIdentity.currentUser() + " is currently logged in");
   </script>
 
 

@@ -18,6 +18,9 @@
   "homepage": "https://github.com/Schallenballa/ModMe#readme",
   "dependencies": {
     "dotenv": "^6.2.0",
-    "gotrue-js": "^0.9.22"
+    "gotrue-js": "^0.9.22",
+    "netlify-identity-widget": "^1.5.2",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3"
   }
 }
