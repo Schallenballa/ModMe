@@ -37,6 +37,13 @@
     <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
     <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript">
+
+    function trigger(){
+      const checkLogged = netlifyIdentity.currentUser();
+      console.log("Welcome " + checkLogged);
+    }
+    </script>
 
 
   </head>
@@ -46,18 +53,7 @@
   </a>
   -->
 
-<!--Checks to see if the user is logged in-->
-  <script>
-      window.onload = function() {
-          if(!user) {
-              document.getElementById('authenticated').style.display = 'block';
-              document.getElementById('authenticated2').style.display = 'block';
-          } else {
-              document.getElementById('authenticated').style.display = 'none';
-              document.getElementById('authenticated2').style.display = 'none';
-          }
-      }
-  </script>
+
 
 
   <body>
@@ -91,9 +87,8 @@
         <h1 class="headline">ModMe</h1>
         <p class="headline_text">Welcome to <span >ModMe</span>! The all-in-one place for all of your car needs.</p>
         <center>
-          <a href="#" onClick="netlifyIdentity.open()" id="authenticated" type="hidden"><img src="ImgAssets/RegisterButton.png" href="./" alt="Register Button" height="50"></a>
-          <a href="#" onClick="netlifyIdentity.open()" id="authenticated2" type="hidden"><img src="ImgAssets/LogInButton.png" href="./" alt="Log In Button" height="50"></a>
-          <!--<button class="registerButton">Styled Button</button>-->
+          <a href="#" onClick="netlifyIdentity.open(); trigger();" id="authenticated" type="hidden"><img src="ImgAssets/RegisterButton.png" href="./" alt="Register Button" height="50"></a>
+          <a href="#" onClick="netlifyIdentity.open(); trigger();" id="authenticated2" type="hidden"><img src="ImgAssets/LogInButton.png" href="./" alt="Log In Button" height="50"></a>
         </center>
       </div></div>
 
